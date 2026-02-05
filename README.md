@@ -97,4 +97,37 @@ This project uses **NLP + Generative AI** to:
 ---
 
 ## 📁 Project Structure
+contract_bot/
+│
+├── app.py # Main Streamlit app
+├── requirements.txt
+│
+├── utils/
+│ ├── extractor.py # File → text
+│ ├── clause_splitter.py # Text → clauses
+│ ├── ner.py # Entity detection
+│ ├── risk_engine.py # Risk scoring logic
+│ ├── llm_helper.py # AI explanation
+│ ├── report_generator.py# PDF reports
+│ ├── audit_logger.py # Audit logs
+
+
+---
+
+## 🔄 Workflow
+
+```
+Upload Contract
+      ↓
+Text Extraction
+      ↓
+Clause Segmentation
+      ↓
+NLP Entity Detection
+      ↓
+Risk Engine
+      ↓
+Explanation Generator
+      ↓
+Dashboard + PDF Report
 
